@@ -1,0 +1,35 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix xml: <http://www.w3.org/XML/1998/namespace>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<callto://droxel> a <http://skype.com/>.
+<http://g1o.net#me> a foaf:Person; 
+  rdfs:seeAlso <http://g1o.net/foaf.rdf>;
+  foaf:name "Giovanni Tummarello".
+
+<http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan> a foaf:Person;
+  rdfs:seeAlso <http://sw.deri.org/~aidanh/foaf/foaf.rdf>;
+  foaf:homepage <http://www.aidanhogan.com/>;
+  foaf:name "Aidan Hogan".
+
+<http://www.polleres.net/foaf.rdf#me> a foaf:Person;
+  rdfs:seeAlso <http://www.google.com/profiles/droxel>;
+  foaf:depiction <http://www.polleres.net/images/axel.jpg>;
+  foaf:family_name "Polleres";
+  foaf:familyName "Polleres";
+  foaf:firstName "Axel";
+  foaf:givenname "Axel";
+  foaf:knows <http://g1o.net#me>,
+             _:bnode757172928,
+             _:bnode624461248;
+  foaf:lastName "Polleres".
+
+_:bnode624461248 a foaf:Person;
+  foaf:homepage <http://apassant.net/>;
+  foaf:name "Alexandre Passant".
+
+_:bnode757172928 a foaf:Person;
+  foaf:homepage <http://www.w3.org/People/Eric/>;
+  foaf:name "Eric Gordon Prud'hommeaux".

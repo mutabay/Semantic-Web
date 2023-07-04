@@ -1,0 +1,18 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix uni: <http://aau.at/#> .
+
+uni:studiesAt  rdfs:subPropertyOf  uni:visits .
+
+uni:Student  uni:studiesAt  uni:AAU .
+
+uni:Megan  uni:studiesAt  uni:AAU .
+
+uni:studiesAt  rdfs:domain  uni:Student ;
+        rdfs:range   uni:University .
+
+uni:Student  rdfs:subClassOf  uni:Person .
+
+uni:Person  rdfs:subClassOf  uni:Agent .
+
+uni:Agent  rdfs:subClassOf  uni:Thing .

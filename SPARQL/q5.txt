@@ -1,0 +1,15 @@
+------------------------------------
+| element          | name          |
+====================================
+| periodicTable:Cr | "chromium"    |
+| periodicTable:Cd | "cadmium"     |
+| periodicTable:Ca | "calcium"     |
+| periodicTable:Cm | "curium"      |
+| periodicTable:Ce | "cerium"      |
+| periodicTable:C  | "carbon"      |
+| periodicTable:Co | "cobalt"      |
+| periodicTable:Cl | "chlorine"    |
+| periodicTable:Cf | "californium" |
+| periodicTable:Cs | "caesium"     |
+| periodicTable:Cu | "copper"      |
+------------------------------------

@@ -1,0 +1,9 @@
+-----------------------------------------------
+| element          | name            | number |
+===============================================
+| periodicTable:Fr | "francium"      | 87     |
+| periodicTable:Lr | "lawrencium"    | 103    |
+| periodicTable:Ra | "radium"        | 88     |
+| periodicTable:Rn | "radon"         | 86     |
+| periodicTable:Rf | "rutherfordium" | 104    |
+-----------------------------------------------

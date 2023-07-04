@@ -1,0 +1,15 @@
+# Extend the previous query to find whether some not actinides in among the elements.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX periodicTable: <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
+
+SELECT ?element ?name ?number
+WHERE {
+  ?element rdf:type periodicTable:Element .
+  ?element periodicTable:atomicNumber ?number .
+  ?element periodicTable:name ?name .
+  FILTER (?number >= 85 && ?number <= 105)
+  FILTER NOT EXISTS { ?element periodicTable:group periodicTable:group_actinoid }
+}
+ORDER BY ?name
+OFFSET 2 LIMIT 10

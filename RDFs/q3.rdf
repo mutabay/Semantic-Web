@@ -1,0 +1,36 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:Peter a schema:Person .
+
+schema:Student rdfs:subClassOf schema:Person .
+
+schema:Peter schema:children [
+    a schema:Person ;
+    schema:name "Jonas" ;
+    schema:birthDate "2020-01-01"^^xsd:date
+] , [
+    a schema:Person ;
+    schema:name "Rosemary" ;
+    schema:birthDate "2018-01-01"^^xsd:date
+] .
+
+schema:Canon schema:makes schema:MarkIV ;
+             schema:audience schema:ProfessionalPhotographers .
+
+schema:MarkIV a schema:ProductModel .
+
+schema:Friend a schema:Person .
+
+schema:CatOwnership a rdf:Property ;
+                     rdfs:range schema:Person .
+
+schema:Woman rdfs:subClassOf schema:Person .
+
+schema:Friend schema:tells [
+    a schema:Statement ;
+    schema:text "A person who owns a cat is a woman" ;
+    schema:subject schema:CatOwnership ;
+    schema:predicate rdf:type ;
+    schema:object schema:Woman
+] .

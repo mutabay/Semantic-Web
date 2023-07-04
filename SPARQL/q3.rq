@@ -1,0 +1,13 @@
+# Find all elements which atomic number lies between 85 and 105. Limit the dataset to the 10 records starting from the 3rd record. Order the results by name of elements.
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX perodicTable: <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
+
+SELECT ?element ?name ?number
+WHERE {
+  ?element rdf:type perodicTable:Element .
+  ?element perodicTable:atomicNumber ?number .
+  ?element perodicTable:name ?name .
+  FILTER (?number >= 85 && ?number <= 105)
+}
+ORDER BY ?name
+OFFSET 2 LIMIT 10

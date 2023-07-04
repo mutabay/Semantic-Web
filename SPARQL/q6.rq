@@ -1,0 +1,13 @@
+# Use the periodic table ontology to determine the number of elements in actinoid and lanthanoid groups.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX periodictable: <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
+
+SELECT ?group (COUNT(?element) as ?count)
+WHERE {
+  ?element rdf:type periodictable:Element ;
+           periodictable:group ?group .
+  
+  FILTER (?group = periodictable:group_lanthanoid || ?group = periodictable:group_actinoid)
+}
+GROUP BY ?group

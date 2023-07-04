@@ -1,0 +1,21 @@
+# Find all metallic elements which atomic number is greater than the average.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX periodicTable: <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
+
+SELECT ?elementName ?atomicNumber
+WHERE {
+  ?element rdf:type periodicTable:Element ;
+           periodicTable:name ?elementName ;
+           periodicTable:atomicNumber ?atomicNumber ;
+           periodicTable:classification periodicTable:Metallic .
+  {
+    SELECT (AVG(?atomicNumber) AS ?avgAtomicNumber)
+    WHERE {
+      ?element rdf:type periodicTable:Element ;
+               periodicTable:atomicNumber ?atomicNumber .
+    }
+  }
+  FILTER (?atomicNumber > ?avgAtomicNumber)
+}
+ORDER BY(?atomicNumber)

@@ -1,0 +1,14 @@
+--------------------------------------------
+| element         | name          | number |
+============================================
+| perodicTable:At | "astatine"    | 85     |
+| perodicTable:Bk | "berkelium"   | 97     |
+| perodicTable:Cf | "californium" | 98     |
+| perodicTable:Cm | "curium"      | 96     |
+| perodicTable:Db | "dubnium"     | 105    |
+| perodicTable:Es | "einsteinium" | 99     |
+| perodicTable:Fm | "fermium"     | 100    |
+| perodicTable:Fr | "francium"    | 87     |
+| perodicTable:Lr | "lawrencium"  | 103    |
+| perodicTable:Md | "mendelevium" | 101    |
+--------------------------------------------
