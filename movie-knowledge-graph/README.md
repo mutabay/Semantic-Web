@@ -6,7 +6,7 @@ A hands-on learning project for **Knowledge Graphs** and **Semantic Web** techno
 
 ## 📖 What is This Project?
 
-This project is my personal learning journey into knowledge graphs, created during my PhD studies. It demonstrates how to:
+This project is my personal learning journey into knowledge graphs. It demonstrates how to:
 
 1. **Transform tabular data** (CSV) into interconnected knowledge graphs
 2. **Compare two major approaches**: RDF (Semantic Web) vs Property Graphs (Neo4j)
